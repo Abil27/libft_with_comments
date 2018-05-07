@@ -12,6 +12,8 @@
 
 #include "libft.h"
 
+/* Cette fonction prend en parametre ladresse dun pointeur. La zone pointee doit
+etre liberee en utilisant la fonction free. Ensuite le pointeur est set a NULL*/
 void	ft_memdel(void **ap)
 {
 	if (ap && *ap)

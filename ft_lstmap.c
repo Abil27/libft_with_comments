@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*Cette fonction prend une liste de lst passee en parametre et applique la fonction f
+a chaque fonction puis cree et retourne une fresh list. Cela entraîne des applications 
+successives de la fonction de manière récursive jusqu'à ce que la fin de la liste soit 
+atteinte et que la nouvelle liste soit renvoyée */
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list		*new;
