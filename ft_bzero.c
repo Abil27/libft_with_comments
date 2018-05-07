@@ -13,6 +13,9 @@
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
-{
+{   
+	/* la fonction bzero rempli une zone de memoire avec 0. la seule difference avec memset
+	est que memset on decide de la valeur mais avec bzero c'est aut matiquement zero'. Mais 
+	si le n ou le len est o, ft_bzero ne fait rien */ 
 	ft_memset(s, 0, n);
 }

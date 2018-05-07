@@ -22,6 +22,12 @@ static size_t	get_str_len(int n)
 	return (i);
 }
 
+/*la fonctioin itoa permet de dallouer de l,espace et de retourner un fresh string
+de caractere suivi d'un \'0' qui est lequivqlent du int passe en parametre.'
+Negative numbers should be managed as well. If the allocation
+fails the function will return NULL. NOTE: This is a recursive function. If
+you are unfamiliar with recursive functions it is a function which either
+calls itself or is in a potential cycle of function calls */
 char			*ft_itoa(int n)
 {
 	char			*str;

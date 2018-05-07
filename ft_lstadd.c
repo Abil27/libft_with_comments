@@ -14,6 +14,10 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
+	/* Cette fonction ajoute un nouveau called new qui est passee dans notre 
+	parametre dans notre liste en le placant en tete de list
+	*/
+
 	new->next = *alst;
 	*alst = new;
 }

@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/*Dans cette fonction nous allons prendre en parametre ladresse dun pointeur sur
+un lien et liberer la memoire sur ce dernier et tous les liens qui le suivent les
+uns pares les autres en utilisant la fonction del qui a ete passe en parametre
+egalement.*/
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
 	if ((*alst)->next)
